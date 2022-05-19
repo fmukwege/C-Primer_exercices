@@ -1,0 +1,19 @@
+ex2_9.txt
+
+std::cin >> int input_value do not work since >>'s right hand operator is int and it does not allow this operator
+--> correction   int input_value;
+                 std::cin >> input_value;
+
+double salary = 9999.99, wage = 9999.99; or double salary,wage; salary=wage= 9999.99
+
+int i = {3.14} not possible -> do it like in d) or put it like double i 
+
+
+----
+
+ex2_11
+
+
+a) declaration and definition since the initialisation 
+b) declaration and definition
+c) declaration 

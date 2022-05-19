@@ -1,0 +1,5 @@
+map<int,vector<int>>
+
+- value_type = type of what the map is containing, what we access with an iterator = pair<int,vector<int>>
+- key_type = type of the key contained in the pair = int 
+- mapped_type : type of value accessed by the key (what is mapped throught the key ) = vector<int>

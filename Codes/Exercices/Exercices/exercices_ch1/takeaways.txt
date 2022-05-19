@@ -1,0 +1,12 @@
+takeaways.txt
+
+How to compile and run a C++ in VS Code and in the terminal
+
+How to setup and debug in VS Code
+
+How to deal with in and out stream, how to interrupt them
+
+For, while loops and if-else statements
+
+Classes
+

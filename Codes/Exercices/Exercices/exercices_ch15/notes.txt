@@ -1,0 +1,28 @@
+Class design : 
+
+1. Always split declaration (in .h) and definition (in .cpp)
+    - Start by declaring everything you need in the .h file.
+    - Then define each member function / friend functions in the cpp file. 
+
+2. virtual keywords to make classes inherited redefine the function (with override or final keywords)
+
+3. Do not mix overloading and overriding : 
+    - overloading is declaring for the same function name, 
+    different parameters but for the same return type. (what we do with the constructor for ex)
+
+        ex: void print(const char *cp);
+            void print(const int *beg, const int *end);
+            void print(const int ia[], size_t size);
+    - overriding happens in OOP when we REDEFINE a virtual function inherited from the direct base class.
+    The override function needs to have the same parameters and return types but the body of the function can be totally different
+
+    Ex: in the direct base class we have this -     
+        virtual void print_total(std::ostream& os) const;
+        virtual void debug(std::ostream& os) const;
+    And in the derived class we got this : 
+        void print_total(std::ostream& os) const override;
+        virtual void debug(std::ostream& os) const override;
+
+Note that a overloaded function can be override  
+
+4. Always put the destructor in virtual to avoid memory leaks when running delete on dynamically allocated objets of that class

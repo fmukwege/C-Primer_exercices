@@ -1,0 +1,7 @@
+set : sorted datastructure with unique entry 
+map : sorted dictionary(key:value pairs) like datastructure. 
+    The sorting key is based on the key elem (if number : > or < operator, if string : alphabetical ...)
+
+hashed tables : unordered_map, unordered_set
+
+use them for quick look up, presence checking, automatic storage with sorting. 

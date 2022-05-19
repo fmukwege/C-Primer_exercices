@@ -1,0 +1,23 @@
+C++ provides a limited number of statements. Most of these affect the flow of
+control within a program:
+    • while, for, and do while statements, which provide iterative execution.
+    • if and switch, which provide conditional execution.
+    • continue, which stops the current iteration of a loop.
+    • break, which exits a loop or switch statement.
+    • goto, which transfers control to a labeled statement. (SHOULD NOT USE IT)
+    • try and catch, which define a try block enclosing a sequence of statements
+    that might throw an exception. The catch clause(s) are intended to handle
+    the exception(s) that the enclosed code might throw.
+    • throw expression statements, which exit a block of code, transferring control
+    to an associated catch clause.
+    • return, which stops execution of a function. (We’ll cover return statements in Chapter 6.)
+
+Important : 
+    - try, catch and throw procedure might because helpful in advanced code
+        - import the <stdexcerpt> to throw exception objects
+        - put in try your code that might generate an exception 
+        - use if/else statements to throw exceptions, these will break the try and launch the related catch statement associated to the exception
+    - Avoid goto's at any cost
+    - =/= btw continue and break : 
+        - continue break the iteration and goes to the next one (break the loop for i =1 and starts it back at i = 2)
+        - break breaks the WHOLE loop/switch and exits it !! 

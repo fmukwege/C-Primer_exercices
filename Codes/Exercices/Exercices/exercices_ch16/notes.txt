@@ -1,0 +1,10 @@
+Generic programming and templates
+
+
+Templates : 
+
+1. Use them when you need multiple version of the same fct w/ the same body (when Overloading would'have been tedious)
+2. Functions templates must be defined in their headers (no split of the declaration and the definition)
+3. Functions and class can be written as templates.
+    - For classes, the member functions are defined as templates since the compiler will produce a version at run time for each
+    instanciation of the template in the code  

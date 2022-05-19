@@ -1,0 +1,14 @@
+int : coded on 16 bits (2 octet)
+long : coded on 32 bits( 4 octet)
+long long : 64 bits (8 octet)
+float : single precision floating point (32 bits mini)
+double: double precision floating point (64 bits)
+
+unsigned : non signé ( => 0)
+signed : signé ( negatif ou positif)
+---- 
+ex2_2.txt 
+
+
+Everything involving decimal numbers should be computed using floating point numbers. Depending the amplitude of the numbers
+use either float or double 

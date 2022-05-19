@@ -1,0 +1,2 @@
+int month = 9, day = 7; // in decimal base
+int month = 09, day = 07; // in octal base. 09 does not exist since in octal, we go from 0 to 7

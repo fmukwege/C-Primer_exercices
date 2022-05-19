@@ -1,0 +1,3 @@
+Reference should be used instead of pointer in cpp codes. 
+
+Const reference are used when we want to access a value only to read it, not to modify it.

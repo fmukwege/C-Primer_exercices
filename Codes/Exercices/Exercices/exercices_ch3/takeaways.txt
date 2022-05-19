@@ -1,0 +1,10 @@
+In this chapter : std Vectors, strings, C style arrays and multi-dimensional arrays. 
+
+How to use, How to declare, access (iterators and pointers, references.)
+
+Important : 
+ - Use std stuff as most often as possible 
+ - Iterators over pointers, std::strings over C-style strings, std::vectors over arrays
+ - Know how to make cohabitate both in C and C++ mixed projects
+ - Use range for loops when possible to avoid buffer overflow 
+    - Use auto& for the the  "for" loops in case of nested for loops if you plan on accessing in writing mode

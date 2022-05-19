@@ -1,0 +1,13 @@
+Heap memory management :
+
+You can access the heap through the new, delete keywords, shared_ptr, unique_ptr, weak_ptr  and allocator objects from the stl
+
+- Prefer using smart pointers 
+- Avoid mixing raw and smart pointers 
+- if a smart pointer and a raw pointer points to the same memory slot, do not free through delete !
+- allocator allows to encapsulate the meory allocation. It helps by separating allocation and do construction in two steps.
+    - first you allocate raw, unconstructed memory for a given type
+    - then you construct it and initialize it
+These 2 actions are done at the same time with usual pointers (raw and smart) but here, we allow to separate it. 
+Do not forget to destroy the allocator and deallocate it after ! 
+

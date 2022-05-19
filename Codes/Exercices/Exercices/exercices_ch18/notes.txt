@@ -1,0 +1,13 @@
+Virtual inheritance : 
+
+
+Multiple inheritance : 
+
+Class Dog : public Animal, public Mammal
+
+But if the multiple base classes are shared a common set of class ? -> virtual inheritance
+
+Virtual inheritance :
+
+Avoid the child to have multiple instances members of the common set of classes from its direct base classes 
+

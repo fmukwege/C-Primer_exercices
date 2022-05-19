@@ -1,0 +1,38 @@
+Functions and related notions :
+
+Important : 
+- Use of static inside a function : the local static variable won't be destroyed when the function ends but when the program does !
+    - Useful for counters, etc...
+- Top level instructions of const : example pg 213
+    void fcn(const int i) { /* fcn can read but not write to i */ }
+    void fcn(int i) { /* ... */ } // error: redefines fcn(int)
+    In C++, we can define several different functions that have the same name. However, we can do so only if their parameter lists are sufficiently different. Because
+    top-level consts are ignored, we can pass exactly the same types to either version
+    of fcn. The second version of fcn is an error. Despite appearances, its parameter
+    list doesn’t differ from the list in the first version of fcn.
+- Handling arrays in function parameter : 
+    1.
+        // despite appearances, these three declarations of print are equivalent
+        // each function has a single parameter of type const int*
+        void print(const int*);
+        void print(const int[]); // shows the intent that the function takes an array
+        void print(const int[10]); // dimension for documentation purposes (at best)
+
+        BEWARE OF EXCEEDING BOUNDARIES
+    2. 
+
+        Using the Standard Library Conventions
+        A second technique used to manage array arguments is to pass pointers to the first
+        and one past the last element in the array : (example here we print each elem of an int array)
+
+        void print(const int *beg, const int *end)
+        {
+        // print every element starting at beg up to but not including end
+            while (beg != end)
+                cout << *beg++ << endl; // print the current element
+                                        // and advance the pointer
+        }
+
+        Note : take a look at the precedence of the operator : dereferencement then increment 
+        3. 
+        When a function does not need write access to the array elements, the array parameter should be a pointer to const

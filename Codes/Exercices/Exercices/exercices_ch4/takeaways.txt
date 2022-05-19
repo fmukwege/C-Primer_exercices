@@ -1,0 +1,10 @@
+Expressions and Operators : 
+
+
+Important : 
+
+- Sizeof operator to evaluate the size occupied by a variable (in bytes)
+    - usually int, float are on 4 bytes, double on 8, char on 1, and array ans string, vectors etc... are on n*(sizeof what they contained)
+    - pointers need more memory : the address and the data : 
+        a int* holds 8+ 4 bytes = 8 bytes for the address, 4 bytes for the data it is pointing to
+        a double* holds 2*8 bytes = 8 bytes for the address, 8 bytes for the data
